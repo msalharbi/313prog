@@ -7,10 +7,14 @@ public class MyFirstApp {
 
         Shape s = new Shape();
         s.setName("circle");
+        s.setColor("yellow");
+        System.out.println(s.getName() +" "+ s.getColor());
         
-        System.out.println(s.getName());
+        Shape m = new Shape();
+        m.setName("Square");
+        m.setColor("blue");
         
-        //square
+        System.out.println(m.getName() +" "+ m.getColor());
         
     }
 }
