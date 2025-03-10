@@ -1,38 +1,28 @@
-
 package myfirstapp;
 
-public class Shape {
-    // properties
-    String name;
-    String color;
-    
-    //constructor #1
-    public Shape(){
-        this.name = "Rectangle";
-        this.color = "Red";
-    }
-    //constructor #2
-    public Shape(String name, String color){
-        this.name = name;
-        this.color = color;
-    }
-    
-   // methods
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+public class MyFirstApp {
 
-    public String getColor() {
-        return color;
-    }
+    public static void main(String[] args) {
 
-    public void setColor(String color) {
-        this.color = color;
+        Shape s = new Shape();
+        s.setName("circle");
+        s.setColor("yellow");
+        System.out.println(s.getName() +" "+ s.getColor());
+        
+        Shape m = new Shape();
+        m.setName("Square");
+        m.setColor("blue");
+        
+        System.out.println(m.getName() +" "+ m.getColor());
+        
+        Shape def = new Shape();
+        System.out.println(def.getName() +" "+ def.getColor());
+        
+        Shape n = new Shape("Elipse", "white");
+        System.out.println(n.getName() +" "+ n.getColor());
+        n.setName("Dimond");
+        System.out.println(n.getName() +" "+ n.getColor());
+        
     }
- 
 }
-
